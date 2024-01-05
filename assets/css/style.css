@@ -4,7 +4,7 @@
 
 html,
 body {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -83,9 +83,11 @@ li {
 
 /* Header */
 .header {
-  padding-top: 30px;
   background: var(--header-bg);
-  z-index: 0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 10px;
 }
 
 .header-top {
@@ -176,9 +178,6 @@ li {
 }
 
 .header-action-signup {
-  /* height: 44px;
-  line-height: 44px; */
-  --height: 44px;
   min-width: 104px;
   margin-left: 28px;
 }
@@ -186,8 +185,12 @@ li {
 /* Hero */
 
 .hero {
-  display: flex;
   padding: 76px 0 110px;
+  background: var(--header-bg);
+}
+
+.hero .container {
+  display: flex;
   align-items: center;
 }
 
@@ -390,7 +393,7 @@ li {
 /* about */
 
 .about {
-  padding: 170px 0;
+  padding: 170px 0 0;
 }
 
 .about__row {
@@ -439,6 +442,7 @@ li {
 /* Doctors */
 
 .doctors {
+  padding-top: 170px;
 }
 
 .doctors__row {
